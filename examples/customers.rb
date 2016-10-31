@@ -11,7 +11,7 @@ Chargify.configure do |c|
 end
 
 
-# Retrieve a list of all your customers
+# Retrieve a list of your customers. Up to 50 results will be returned.
 Chargify::Customer.find(:all)
 # => [#<Chargify::Customer:0x102d0cef8 @prefix_options={}, @attributes={"reference"=>"moklett", "updated_at"=>Mon Nov 16 23:19:25 UTC 2009, "id"=>325, "first_name"=>"Michael", "organization"=>"Chargify", "last_name"=>"Klett", "email"=>"moklett@example.com", "created_at"=>Mon Nov 16 23:19:25 UTC 2009}>]
 
